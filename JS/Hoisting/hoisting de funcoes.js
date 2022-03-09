@@ -19,5 +19,4 @@ function fn(){
 
     log("hoisting de função") 
 }
-
 */

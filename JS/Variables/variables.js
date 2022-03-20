@@ -66,3 +66,16 @@ console.log(z)
 z.data = "1998"//Mas permite adicionar coisas novas.
 console.log(z)
 
+
+//####################################################################################################################################
+//Variveis com valores alternativos
+
+function taxacao(description, tax , price){
+    tax =  tax ||0.05
+    description = description || 'Default item'
+    price = price || 0
+    const total = price + ( price * tax)
+    return  `${description} with tax cost: ${total}`
+}
+
+console.log(taxacao(0, 0, 40))

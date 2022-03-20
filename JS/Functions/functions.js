@@ -2,6 +2,7 @@ function fn(){
     return 'code here'
 }
 
+//função dentro de função.
 function fn2(){
     log("hoisting de função")
 
@@ -27,3 +28,6 @@ const fn3 = () => {
     log(120) 
 }
 fn3()
+
+
+

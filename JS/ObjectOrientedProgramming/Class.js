@@ -32,7 +32,7 @@ class Cachorro extends Animal { //Herdar
     }
 }
 
-const pug = new Cachorro('Não')
+const pug = new Cachorro('Não')//Criando o objeto 
 console.log(pug)
 
 
@@ -94,7 +94,7 @@ class Cachorro2 extends Animal { //Herdar
 
 }
 
-const pug2 = new Cachorro2('Não')
-const pitibull2 = new Cachorro2('Sim')
+const pug2 = new Cachorro2('Não')//Criando o objeto 
+const pitibull2 = new Cachorro2('Sim')//Criando o objeto 
 console.log(pug2)
 console.log(pitibull2)

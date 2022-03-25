@@ -48,5 +48,3 @@ const totalEvenAges = persons
                             return age;},0)
 
 console.log(totalEvenAges)
-
-

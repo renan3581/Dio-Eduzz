@@ -15,3 +15,5 @@ array.forEach(item =>{
 //No else if, se mais de uma condição for verdadeira, somente a primeira sera acionada, como é o caso do 6 acima.
 //Para que todas as condiçoes sejam acionadas é necessario que exista somente if's e else's separados.
 
+
+

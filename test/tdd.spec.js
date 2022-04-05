@@ -5,7 +5,8 @@
 const assert = require('assert'); //Assert
 const Math = require('../JS/Testes_BDD_TDD/math.js')
 const expect = require('chai').expect; //Biblioteca de assert - 'chai'
-
+const sinon = require('sinon'); //Biblioteca de stubs - 'sinon'
+//Sync.
 /*
 describe('Math class', function(){//Descreve o que esta sendo testado
     it('5 + 5 = 10 ?', function(){//Descreve o teste.
@@ -16,9 +17,10 @@ describe('Math class', function(){//Descreve o que esta sendo testado
 })
 */
 
-
+//Async.
 //Timout maximo de 2000ms no mocha por padrão.
 describe('Math class', function(){
+
     it('5 + 5 = 10 ?', function(done){//Teste Async.
         const math = new Math();
         
@@ -29,10 +31,12 @@ describe('Math class', function(){
             done();
         })//Verifica se o valor retornado é 10.
     }); 
+
 })
 
 
 describe('Objeto',function(){
+
     it('Tem a propriedade nome e o seu valor é " "?', function(){
         const obj = {
             name:'Renan Silva'
@@ -40,4 +44,22 @@ describe('Objeto',function(){
 
         expect(obj).to.have.property('name').equal('Renan Silva');
     });
+
+})
+
+
+describe('Testando sinon',function(){
+
+    it('Chama o "req" com os valores de "index" e "sum".', function(){
+      const req = {};
+      const res = {
+          load: sinon.spy()
+      };
+
+      const math = new Math();
+      math.printSum(req,res,5,5);
+
+      expect(res.load.calledOnce).to.be.true;
+    });
+
 })

@@ -19,7 +19,15 @@ class Math{
         setTimeout(function(){
             callback(a+b);
         }, 5);
-     }
-}
+    }
 
+    multiply(a,b){
+        return a * b
+    }
+
+    printSum(req,res, a, b){
+        res.load('index',a + b);
+    }
+    
+}
 module.exports = Math;

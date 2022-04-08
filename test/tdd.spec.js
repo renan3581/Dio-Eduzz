@@ -3,7 +3,7 @@
 //Para testar funçoes assíncronas, deve ser inserido no it('', function(done){}), sem o 'done' o teste sempre ira passar, idependente do resultado do teste.
 
 const assert = require('assert'); //Assert
-const Math = require('../JS/Testes_BDD_TDD/math.js')
+const Math = require('../JS/ArquivosDeTeste/math.js')
 const expect = require('chai').expect; //Biblioteca de assert - 'chai'
 const sinon = require('sinon'); //Biblioteca de stubs - 'sinon'
 //Sync.

@@ -25,5 +25,10 @@ fetch('https://swapi.dev/api/people/1/')
 })
 
 
+fetch('https://swapi.dev/api/people/1')
+    .then(response => response.json()).then(resp =>{ const pessoa = resp //Atribuindo a variavel
+        console.log(pessoa.birth_year); // Pode ser colocado de forma direta tabem = resp.birth_year
+    })
+    
 
 
